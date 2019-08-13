@@ -6,7 +6,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 def main():
     try:
-        s = Scheduler() # 调度器
+        s = Scheduler() # 这个是调度器
         s.run()
     except:
         main()
