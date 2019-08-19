@@ -8,7 +8,7 @@ sys.path.insert(0, dir)
 
 
 def get_proxy():
-    r = requests.get('http://127.0.0.1:5000/get')
+    r = requests.get('http://127.0.0.1:6379/get')
     proxy = BeautifulSoup(r.text, "lxml").get_text()
     return proxy
 

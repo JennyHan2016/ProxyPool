@@ -25,7 +25,7 @@ TESTER_CYCLE = 20
 GETTER_CYCLE = 300
 
 # 测试API，建议抓哪个网站测哪个
-TEST_URL = 'http://www.baidu.com'
+TEST_URL = 'https://www.baidu.com'
 
 # API配置
 API_HOST = '0.0.0.0'
