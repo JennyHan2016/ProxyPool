@@ -1,4 +1,4 @@
-from flask import Flask, g
+from flask import Flask,g
 
 from .db import RedisClient
 

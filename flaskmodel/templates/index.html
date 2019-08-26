@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这是模版<br>
+这是首页<br>
+<hr>
+{#列表的使用#}
+{{my_list}}<br>
+{{my_list.2}}<br>
+{{my_list[3]}}<br>
+<hr>
+{#字典的使用#}
+{{my_dic}}<br>
+{{my_dic.name}}<br>
+{{my_dic['name']}}<br>
+<hr>
+{{url_str}}<br>
+<hr>
+{# for循环的使用 #}
+{% for num in my_list %}
+   {% if num > 100 %}
+      {{ num }} <br>
+   {% endif %}
+{% endfor %}
+<hr>
+{{my_int}}<br>
+<hr>
+{# 过滤器 链式调用 还有很多其他的 #}
+{{url_str | upper | reverse | lower | reverse}}
+<hr>
+
+</body>
+</html>

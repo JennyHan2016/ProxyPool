@@ -8,13 +8,15 @@ base_headers = {
 }
 
 
-def get_page(url, options={}):
+def get_page(url, options=None):
     """
     抓取代理
     :param url:
     :param options:
     :return:
     """
+    if options is None:
+        options = {}
     headers = dict(base_headers, **options)
     print('正在抓取', url)
     try:
