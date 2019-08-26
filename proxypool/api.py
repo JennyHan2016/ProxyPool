@@ -34,8 +34,6 @@ def get_counts():
     Get the count of proxies
     :return: 代理池总量
     """
-
-    #test
     conn = get_conn()
     return str(conn.count())
 
